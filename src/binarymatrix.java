@@ -25,6 +25,10 @@ public class binarymatrix {
         int inp;
         try{
             inp = sc.nextInt();
+            if(inp < 1){
+                System.out.println("Please give a positive no");
+                inp = takeintinp1(msg,sc);
+            }
         }
         catch (Exception e){
             System.out.println("There was an error");
